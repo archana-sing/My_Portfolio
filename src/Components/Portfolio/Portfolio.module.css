@@ -1,0 +1,62 @@
+.project_cards{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 hsla(0,0%,75%,.5);
+    padding: 40px;
+    display: flex;
+    margin: 30px 200px 40px 200px;
+    border : 3px solid silver;
+    border-radius: 8px;
+}
+/* #06BC9B */
+.proect_cards_text{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+}
+.preview_div{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.icons{
+    color : #06BC9B;
+    font-size: 20px;
+    
+}
+.link{
+    text-decoration: none;
+    margin-left: 10px;
+    color : #525d68;
+}
+.preview_button{
+    background-image: linear-gradient(left,#1ba49c,#06BC9B) ;
+    background-color: #06BC9B;
+    cursor : pointer;
+    color : #fff;
+    padding : 10px 15px;
+    text-align: center;
+    border : none;
+    width: fit-content;
+    margin-right: 20px;
+   margin-top: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+.tech_stacks_icons{
+    color : #06BC9B;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.preview_button:hover{
+    background-color: white;
+    color:#06BC9B;
+    border : 1px solid #06BC9B;
+}

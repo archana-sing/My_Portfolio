@@ -1,0 +1,71 @@
+body{
+    margin : auto;
+    text-align: center;
+}
+.profile_pic{
+    border-radius: 50%;
+    height : 150px;
+    width: 150px;
+    border: 5px solid #06BC9B;
+}
+.lang_pic{
+    border-radius: 50%;
+    height : 130px;
+    width: 120px;
+    padding: 20px;
+    border :  10px solid #06BC9B;
+}
+.lang_cards{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+   align-content: center;
+}
+.proficiencies{
+   color : #06BC9B;
+    height : 130px;
+    width: 130px;
+    padding: 20px;
+    fill : #06BC9B
+}
+.icons{
+    color : #06BC9B;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.contact_icons{
+    color : #06BC9B;
+    font-size: 45px;
+    margin-left: 30px;
+}
+.contact_icons:hover{
+    color: #525d68;
+}
+.download_icon{
+    color : white;
+    font-size: 20px;
+}
+.resumeButton{
+    background-image: linear-gradient(left,#1ba49c,#06BC9B) ;
+    background-color: #06BC9B !important;
+    cursor : pointer;
+    color : #fff;
+    padding : 20px;
+    text-align: center;
+    border : none;
+    width: fit-content;
+    
+    margin: 10px auto;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+}
+.divider_div{
+    border-bottom: 2px solid rgb(235, 232, 232);
+}

@@ -1,0 +1,92 @@
+/* .form{
+    display: flex;
+    flex-direction: column;
+    background-color : #f5f6f7;
+    margin : 20px auto;
+    width: fit-content;
+    text-align: left;
+    padding-top: 0px;
+}
+.form_heading{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #06BC9B;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color : #fff
+}
+.eachInputField{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.label{
+    margin-left: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+.input{
+    margin-left: 40px;
+    height: 30px;
+    margin-top: 20px;
+    border: 2px solid#d6d6d6;
+    outline : 0;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 80%;
+    padding : 10px
+}
+.textarea{
+    margin-left: 40px;
+    margin-top: 20px;
+    border-color: #d6d6d6;
+    box-shadow: none;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 80%;
+    padding : 10px
+
+}
+.submitButton{
+    background-color: #06BC9B;
+    color : #fff;
+    padding : 20px;
+    text-align: center;
+    border : none;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.submitButton:hover{
+    cursor: pointer;
+} */
+body{
+    background: #fff url(http://www.emilyridge.ie/wp-content/themes/skeleostrnge/lib/img/bg.png) repeat;
+  height: 100vh;
+}
+.contact_div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.line{
+    margin : 20px 20px;
+    width:120px;
+    background-color: silver;
+    height : 2px;
+}
+.contact_icons{
+    color : #06BC9B;
+    font-size: 45px;
+    margin-left: 10px;
+}
+
+.icons{
+    color : #06BC9B;
+    font-size: 25px;
+    margin-left: 30px;
+}

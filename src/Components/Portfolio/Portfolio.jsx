@@ -4,7 +4,7 @@ import busHire from '../../Images/bushire1.png'
 import meetup from '../../Images/Landing Page.png'
 import fitneespal from '../../Images/find_your_fit_landing.PNG'
 import codecov from '../../Images/Screenshot_2020-11-26 The Leading Code Coverage Solution codecov.png'
-import {AiFillGithub } from "react-icons/ai";
+import chatApp from '../../Images/chatapp.png'
 import { SiMaterialUi } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import {SiCss3} from "react-icons/si";
@@ -15,9 +15,10 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import codecovVideo from '../../Videos/codecov.mp4'
-import meetupvideo from '../../Videos/meetup.mp4'
-import MyfitnessPalVideo from '../../Videos/fitnesspal.mp4'
-import redbusvideo from '../../Videos/team_triangle_redbus.mp4'
+import meetupvideo from '../../Videos/meetup video.mp4'
+import MyfitnessPalVideo from '../../Videos/Myfitnesspal video.mp4'
+import redbusvideo from '../../Videos/redbus Video.mp4'
+import chatAppvideo from '../../Videos/chat application video.mp4'
 import { DiJavascript1 } from "react-icons/di";
 
 const useStyles = makeStyles((theme) => ({
@@ -40,7 +41,7 @@ const Portfolio = () => {
     const [open2, setOpen2] = React.useState(false);
     const [open3, setOpen3] = React.useState(false);
     const [open4, setOpen4] = React.useState(false);
-  
+    const [open5, setOpen5] = React.useState(false);
     const handleOpen1 = () => {
       setOpen1(true);
     };
@@ -68,6 +69,14 @@ const Portfolio = () => {
     
       const handleClose4 = () => {
         setOpen4(false);
+      };
+     
+      const handleOpen5 = () => {
+        setOpen5(true);
+      };
+    
+      const handleClose5 = () => {
+        setOpen5(false);
       };
     return (
         <div>
@@ -149,6 +158,46 @@ const Portfolio = () => {
                     <div className={classes.paper}>
                             <video width="1000" height="600" controls >
                                 <source src={meetupvideo} type="video/mp4"/>
+                            </video>
+                    </div>
+                    </Fade>
+                </Modal>
+            </div>
+
+
+            {/* Chat Application */}
+            <div className = {Styles.project_cards} style = {{marginBottom : "40px"}}>
+                    <img src = {chatApp} alt = "chatapp" height = "300px" width = "580px"/>
+                    <div className = {Styles.proect_cards_text}>
+                        <h3>Chat Application</h3>
+                        <p>This is a chat application , which let a user to join a group were user can chat with other members of the group.</p>
+                      
+                        <div className = {Styles.preview_div}>
+                            <button className = {Styles.preview_button} onClick={handleOpen5}>Preview</button>
+                            <a className = {Styles.link} href = "https://github.com/archana-sing/project_chat_application" target = "blank"> <button className = {Styles.preview_button} onClick={handleOpen5}>Github Repo</button></a>
+                        </div>
+                        <div className = {Styles.preview_div}>
+                            <AiFillHtml5 className = {Styles.tech_stacks_icons}/>
+                            <SiCss3 className = {Styles.tech_stacks_icons}/>
+                            <DiJavascript1 className = {Styles.tech_stacks_icons}/>
+                        </div>
+                    </div>
+                    <Modal
+                        aria-labelledby="transition-modal-title"
+                        aria-describedby="transition-modal-description"
+                        className={classes.modal}
+                        open={open5}
+                         onClose={handleClose5}
+                         closeAfterTransition
+                        BackdropComponent={Backdrop}
+                        BackdropProps={{
+                        timeout: 500,
+                        }}
+                    >
+                    <Fade in={open5}>
+                    <div className={classes.paper}>
+                            <video width="1000" height="600" controls >
+                                <source src={chatAppvideo} type="video/mp4"/>
                             </video>
                     </div>
                     </Fade>

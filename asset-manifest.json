@@ -1,33 +1,35 @@
 {
   "files": {
     "main.css": "/My_Portfolio/static/css/main.5a41a6f7.chunk.css",
-    "main.js": "/My_Portfolio/static/js/main.23afdcdb.chunk.js",
-    "main.js.map": "/My_Portfolio/static/js/main.23afdcdb.chunk.js.map",
+    "main.js": "/My_Portfolio/static/js/main.a8edd442.chunk.js",
+    "main.js.map": "/My_Portfolio/static/js/main.a8edd442.chunk.js.map",
     "runtime-main.js": "/My_Portfolio/static/js/runtime-main.821f296b.js",
     "runtime-main.js.map": "/My_Portfolio/static/js/runtime-main.821f296b.js.map",
-    "static/js/2.1548a32b.chunk.js": "/My_Portfolio/static/js/2.1548a32b.chunk.js",
-    "static/js/2.1548a32b.chunk.js.map": "/My_Portfolio/static/js/2.1548a32b.chunk.js.map",
+    "static/js/2.9363aba3.chunk.js": "/My_Portfolio/static/js/2.9363aba3.chunk.js",
+    "static/js/2.9363aba3.chunk.js.map": "/My_Portfolio/static/js/2.9363aba3.chunk.js.map",
     "static/js/3.d4b3b3d7.chunk.js": "/My_Portfolio/static/js/3.d4b3b3d7.chunk.js",
     "static/js/3.d4b3b3d7.chunk.js.map": "/My_Portfolio/static/js/3.d4b3b3d7.chunk.js.map",
     "index.html": "/My_Portfolio/index.html",
     "static/css/main.5a41a6f7.chunk.css.map": "/My_Portfolio/static/css/main.5a41a6f7.chunk.css.map",
-    "static/js/2.1548a32b.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/2.1548a32b.chunk.js.LICENSE.txt",
+    "static/js/2.9363aba3.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/2.9363aba3.chunk.js.LICENSE.txt",
     "static/media/Landing Page.6be514bf.png": "/My_Portfolio/static/media/Landing Page.6be514bf.png",
     "static/media/My git commits.1a4e3564.png": "/My_Portfolio/static/media/My git commits.1a4e3564.png",
+    "static/media/Myfitnesspal video.797addd5.mp4": "/My_Portfolio/static/media/Myfitnesspal video.797addd5.mp4",
     "static/media/Screenshot_2020-11-26 The Leading Code Coverage Solution codecov.a7ee73e4.png": "/My_Portfolio/static/media/Screenshot_2020-11-26 The Leading Code Coverage Solution codecov.a7ee73e4.png",
     "static/media/bushire1.e96ce765.png": "/My_Portfolio/static/media/bushire1.e96ce765.png",
+    "static/media/chat application video.f725e535.mp4": "/My_Portfolio/static/media/chat application video.f725e535.mp4",
+    "static/media/chatapp.5beb4467.png": "/My_Portfolio/static/media/chatapp.5beb4467.png",
     "static/media/codecov.ab9a508d.mp4": "/My_Portfolio/static/media/codecov.ab9a508d.mp4",
     "static/media/find_your_fit_landing.7353a9c0.PNG": "/My_Portfolio/static/media/find_your_fit_landing.7353a9c0.PNG",
-    "static/media/fitnesspal.460e37c3.mp4": "/My_Portfolio/static/media/fitnesspal.460e37c3.mp4",
-    "static/media/meetup.4552e835.mp4": "/My_Portfolio/static/media/meetup.4552e835.mp4",
+    "static/media/meetup video.9c2969a7.mp4": "/My_Portfolio/static/media/meetup video.9c2969a7.mp4",
     "static/media/my_profile_pic.ee7fdd3d.jpg": "/My_Portfolio/static/media/my_profile_pic.ee7fdd3d.jpg",
-    "static/media/resume archana.f7bbef38.pdf": "/My_Portfolio/static/media/resume archana.f7bbef38.pdf",
-    "static/media/team_triangle_redbus.859d2dd6.mp4": "/My_Portfolio/static/media/team_triangle_redbus.859d2dd6.mp4"
+    "static/media/redbus Video.3b1aadee.mp4": "/My_Portfolio/static/media/redbus Video.3b1aadee.mp4",
+    "static/media/resume archana.f7bbef38.pdf": "/My_Portfolio/static/media/resume archana.f7bbef38.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.821f296b.js",
-    "static/js/2.1548a32b.chunk.js",
+    "static/js/2.9363aba3.chunk.js",
     "static/css/main.5a41a6f7.chunk.css",
-    "static/js/main.23afdcdb.chunk.js"
+    "static/js/main.a8edd442.chunk.js"
   ]
 }

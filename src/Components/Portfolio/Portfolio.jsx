@@ -80,10 +80,10 @@ const Portfolio = () => {
       };
     return (
         <div>
-            <h1 style = {{marginTop : "50px" , marginBottom : "60px" , fontSize : "40px"}}>My Work</h1>
+            <h1 style = {{marginTop : "50px" , marginBottom : "60px" , fontSize : "40px",textAlign:"center"}}>My Work</h1>
             <div className = {Styles.projects}>
                 <div className = {Styles.project_cards}>
-                    <img src = {busHire} alt = "redbus" height = "300px" width = "580px"/>
+                    <img className = {Styles.project_images} src = {busHire} alt = "redbus" height = "300px" width = "580px"/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Redbus Clone</h3>
                         <p>A web application, which provides bus booking and hiring feature.</p>
@@ -114,7 +114,7 @@ const Portfolio = () => {
                     >
                     <Fade in={open1}>
                     <div className={classes.paper}>
-                            <video width="1000" height="600" controls >
+                            <video className = {Styles.project_video} width="1000" height="600" controls >
                                 <source src={redbusvideo} type="video/mp4"/>
                             </video>
                     </div>
@@ -126,7 +126,7 @@ const Portfolio = () => {
 
           {/* Meetup */}
             <div className = {Styles.project_cards}>
-                    <img src = {meetup} alt = "meetup" height = "300px" width = ""/>
+                    <img className = {Styles.project_images} src = {meetup} alt = "meetup" height = "300px" width = ""/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Meetup Clone</h3>
                         <p>A web application, where users can organize their own events and join an event on the basis of their interests.</p>
@@ -156,7 +156,7 @@ const Portfolio = () => {
                     >
                     <Fade in={open2}>
                     <div className={classes.paper}>
-                            <video width="1000" height="600" controls >
+                            <video className = {Styles.project_video} width="1000" height="600" controls >
                                 <source src={meetupvideo} type="video/mp4"/>
                             </video>
                     </div>
@@ -167,7 +167,7 @@ const Portfolio = () => {
 
             {/* Chat Application */}
             <div className = {Styles.project_cards} style = {{marginBottom : "40px"}}>
-                    <img src = {chatApp} alt = "chatapp" height = "300px" width = "580px"/>
+                    <img className = {Styles.project_images} src = {chatApp} alt = "chatapp" height = "300px" width = "580px"/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Chat Application</h3>
                         <p>This is a chat application , which let a user to join a group were user can chat with other members of the group.</p>
@@ -196,7 +196,7 @@ const Portfolio = () => {
                     >
                     <Fade in={open5}>
                     <div className={classes.paper}>
-                            <video width="1000" height="600" controls >
+                            <video className = {Styles.project_video} width="1000" height="600" controls >
                                 <source src={chatAppvideo} type="video/mp4"/>
                             </video>
                     </div>
@@ -207,7 +207,7 @@ const Portfolio = () => {
 
             {/* MyfitnessPal */}
             <div className = {Styles.project_cards}>
-                    <img src = {fitneespal} alt = "fitnesspal" height = "300px" width = "580px"/>
+                    <img className = {Styles.project_images} src = {fitneespal} alt = "fitnesspal" height = "300px" width = "580px"/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Myfitnesspal Clone</h3>
                         <p>A web application, where user can keep track of your food and exercises.</p>
@@ -236,7 +236,7 @@ const Portfolio = () => {
                     >
                     <Fade in={open3}>
                     <div className={classes.paper}>
-                            <video width="1000" height="600" controls >
+                            <video className = {Styles.project_video} width="1000" height="600" controls >
                                 <source src={MyfitnessPalVideo} type="video/mp4"/>
                             </video>
                     </div>
@@ -246,7 +246,7 @@ const Portfolio = () => {
 
             {/* CodeCovClone */}
             <div className = {Styles.project_cards} style = {{marginBottom : "40px"}}>
-                    <img src = {codecov} alt = "codecov" height = "300px" width = "580px"/>
+                    <img className = {Styles.project_images} src = {codecov} alt = "codecov" height = "300px" width = "580px"/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Codecov Clone</h3>
                         <p>Some web pages, perfectly clone from Codecov.</p>
@@ -275,7 +275,7 @@ const Portfolio = () => {
                     >
                     <Fade in={open4}>
                     <div className={classes.paper}>
-                            <video width="1000" height="600" controls >
+                            <video className = {Styles.project_video} width="1000" height="600" controls >
                                 <source src={codecovVideo} type="video/mp4"/>
                             </video>
                     </div>

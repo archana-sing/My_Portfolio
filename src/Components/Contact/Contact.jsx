@@ -6,27 +6,8 @@ import {AiFillLinkedin} from "react-icons/ai";
 const Contact = () => {
     return (
         <div>
-{/*             
-            <form  className = {Styles.form}>
-            <div className = {Styles.form_heading}>Get in touch</div>
-                <div className = {Styles.eachInputField}>
-                    <label className = {Styles.label}>Name</label>
-                    <br/>
-                    <input className = {Styles.input}  type = "text" />
-                </div>
-                <div className = {Styles.eachInputField}>
-                    <label className = {Styles.label}>Email</label>
-                    <br/>
-                    <input className = {Styles.input} type = "text" />
-                </div>
-                <div className = {Styles.eachInputField}>
-                    <label className = {Styles.label}>Message</label>
-                    <br/>
-                    <textarea className = {Styles.textarea} type = "text" rows = "7" cols = "50" />
-                </div>
-                <input className = {Styles.submitButton} type = "submit" value = "Send"/>
-            </form> */}
-            <h3>Send me an email</h3>  
+
+            <h3 style = {{textAlign : "center"}}>Send me an email</h3>  
             <div className = {Styles.contact_div}>
                 <MdEmail className = {Styles.icons}/>
                 <h3 style = {{marginLeft : "20px"}}>abhiarchana14@gmail.com</h3>

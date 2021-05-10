@@ -1,54 +1,64 @@
 import React from 'react'
+import{ Link} from 'react-router-dom'
 import Styles from './About.module.css'
+import Portfolio from '../Portfolio/Portfolio'
 import {AiFillPhone } from "react-icons/ai";
 import {AiFillLinkedin} from "react-icons/ai";
 import {AiFillGithub } from "react-icons/ai";
 import {AiFillHome } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import file from '../../Resume/resume archana.pdf'
-import {RiDatabase2Fill } from "react-icons/ri";
-import {SiCss3} from "react-icons/si";
-import {RiReactjsLine } from "react-icons/ri";
-import {AiOutlineApartment} from "react-icons/ai";
-import {useHistory} from 'react-router-dom';
+// import {RiDatabase2Fill } from "react-icons/ri";
+// import {SiCss3} from "react-icons/si";
+// import {RiReactjsLine } from "react-icons/ri";
+// import {AiOutlineApartment} from "react-icons/ai";
+// import {useHistory} from 'react-router-dom';
 import profile_pic from '../../Images/my_profile_pic.jpg'
-import gitcommit from '../../Images/My git commits.png'
+// import gitcommit from '../../Images/My git commits.png'
 
 // import video from '../../Videos/meetup.mp4'
 
 const About = () => {
-    let history = useHistory();
-    const handleClick =() => {
-        history.push("/projects")
-    }
+    // let history = useHistory();
+    // const handleClick =() => {
+    //     history.push("/projects")
+    // }
     return (
         <div>
+            <div className = {Styles.header}>
+                <Link className = {Styles.link} to = "/My_Portfolio">About</Link> 
+                <a className = {Styles.link} href = "#projects">Projects</a> 
+           
+            </div>
             <div >
-                <img className = {Styles.profile_pic} src = {profile_pic} alt = "Archana"/>
-                <div>
-                    <h1 style = {{fontSize : "39px",textAlign : "center"}}>Archana Singh</h1>
-                    <h3 style = {{textAlign : "center"}}>Full Stack Developer</h3>
+                <div style = {{textAlign : "center" , margin : "20px center"}}>
+                    <img className = {Styles.profile_pic} src = {profile_pic} alt = "Archana"/>
+                    <div>
+                        <h1 style = {{fontSize : "39px",textAlign : "center"}}>Archana Singh</h1>
+                        <h3 style = {{textAlign : "center"}}>Full Stack web Developer</h3>
+                    </div>
+                    <div className = {Styles.contact_div}>
+                    <MdEmail className = {Styles.icons}/>
+                    <h4>abhiarchana14@gmail.com</h4>
+                    <AiFillHome className = {Styles.icons}/>
+                    <h4>Pune , India</h4>
+                    <AiFillPhone className = {Styles.icons}/>
+                    <h4>6374442683</h4>
+                    </div>
+                    <h3>Hi , I'm Archana</h3>
+                    <h3>A passionate coder ,who focuses on writing clean, elegant and efficient code.</h3>
+                    <h3>Looking for a challenging role in software industry.</h3>
+                    <div style = {{display : "flex" , justifyContent : "space-around", width : "100px" , margin : "10px auto"}}>
+                        <a className = {Styles.contact_icons} href = "https://www.linkedin.com/in/singh-archana" target = "blank"><AiFillLinkedin/></a>
+                        <a className = {Styles.contact_icons} style = {{marginRight : "30px"}} href = "https://github.com/archana-sing" target = "blank"><AiFillGithub/></a>
+                    </div>
+                    <a  href={file} download="myFile"><button  className = {Styles.resumeButton}>Download Resume</button></a>
                 </div>
-                <div className = {Styles.contact_div}>
-                   <MdEmail className = {Styles.icons}/>
-                   <h4>abhiarchana14@gmail.com</h4>
-                   <AiFillHome className = {Styles.icons}/>
-                   <h4>Pune , India</h4>
-                   <AiFillPhone className = {Styles.icons}/>
-                   <h4>6374442683</h4>
-                </div>
-                <h3>I'm a Pune based Full stack web developer.</h3>
-                <h3>Coder who focuses on writing clean, elegant and efficient code.</h3>
-                <div style = {{display : "flex" , justifyContent : "space-evenly" , alignItems : "center" , width : "100px" , margin : "10px auto"}}>
-                    <a className = {Styles.contact_icons} href = "https://www.linkedin.com/in/singh-archana" target = "blank"><AiFillLinkedin/></a>
-                    <a className = {Styles.contact_icons} href = "https://github.com/archana-sing" target = "blank"><AiFillGithub/></a>
-                </div>
-                <a  href={file} download="myFile"><button  className = {Styles.resumeButton}>Download Resume</button></a>
-                <div className = {Styles.divider_div}></div>
-
-
+                
+               
                 {/* ****************************Tech Stacks Section ******************************************/}
-                <h1 style = {{marginTop : "50px" , marginBottom : "40px" , fontSize : "40px"}}>Tech Stacks</h1>
+               
+                <h1 style = {{marginTop : "50px" , marginBottom : "35px" , fontSize : "30px"}}>Tech Stacks</h1>
                 <div className = {Styles.container_lang_div}>
                     <div  className = {Styles.lang_cards}>
                         <img className = {Styles.lang_pic} src = "data:image/png;base64,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" alt = "html"/>
@@ -76,38 +86,38 @@ const About = () => {
                     </div>
                 </div>
                 <div className = {Styles.divider_div}></div>
-
-                <h1 style = {{marginTop : "50px" , marginBottom : "40px" , fontSize : "40px"}}>Proficiencies</h1>
+                <a name = "projects"><Portfolio/></a>
+                {/* <h1 style = {{marginTop : "50px" , marginBottom : "40px" , fontSize : "40px"}}>Proficiencies</h1>
                 <div className = {Styles.container_proficiency}>
                     <div  className = {Styles.lang_cards}>
                         <RiReactjsLine className = {Styles.proficiencies}/>
-                        {/* <img className = {Styles.proficiencies} src = "https://aalinds.github.io/assets/images/react1.svg" alt = "react"/> */}
+                       
                         <h3>React app</h3>
                         
                     </div >
                     <div className = {Styles.lang_cards}>
                         <SiCss3 className = {Styles.proficiencies}/>
-                    {/* <img className = {Styles.proficiencies} src = "https://aalinds.github.io/assets/images/css3-alt-brands.svg" alt = "frontend"/> */}
+                    
                     <h3>Frontend</h3>
                     </div>
                     <div className = {Styles.lang_cards}>
                         <RiDatabase2Fill className = {Styles.proficiencies} />
-                    {/* <img className = {Styles.proficiencies} src = "https://aalinds.github.io/assets/images/database-solid.svg" alt = "backend"/> */}
+                   
                     <h3>Backend</h3>
                     </div>
                     <div className = {Styles.lang_cards}>
                         <AiOutlineApartment className = {Styles.proficiencies}/>
                         <h3>Data Structure and algorithms</h3>
                     </div>
-                </div>
+                </div> */}
 
-              
+{/*               
                 <div className = {Styles.divider_div}></div>
                 <h1 style = {{marginTop : "50px" , marginBottom : "40px" , fontSize : "40px"}}>Git Commits</h1>
                 <img className = {Styles.gitComit_image} src = {gitcommit} alt = "git" style = {{marginBottom : "40px"}} />
                 <div style = {{display : "flex" , justifyContent : "center" , alignItems : "center"}}>
                     <button className = {Styles.resumeButton} onClick = {handleClick}>See my Projects</button>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -8,7 +8,8 @@ import chatApp from '../../Images/chatapp.png'
 import { SiMaterialUi } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import {SiCss3} from "react-icons/si";
-import {AiFillHtml5 } from "react-icons/ai";
+import { SiHtml5} from "react-icons/si";
+import { SiJavascript} from "react-icons/si";
 import {SiMongodb} from "react-icons/si";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -19,7 +20,7 @@ import meetupvideo from '../../Videos/meetup video.mp4'
 import MyfitnessPalVideo from '../../Videos/Myfitnesspal video.mp4'
 import redbusvideo from '../../Videos/redbus Video.mp4'
 import chatAppvideo from '../../Videos/chat application video.mp4'
-import { DiJavascript1 } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -80,7 +81,7 @@ const Portfolio = () => {
       };
     return (
         <div>
-            <h1 style = {{marginTop : "50px" , marginBottom : "60px" , fontSize : "40px",textAlign:"center"}}>My Work</h1>
+            <h1 style = {{marginTop : "50px" , marginBottom : "60px" , fontSize : "35px",textAlign:"center"}}>My Projects</h1>
             <div className = {Styles.projects}>
                 <div className = {Styles.project_cards}>
                     <img className = {Styles.project_images} src = {busHire} alt = "redbus" height = "300px" width = "580px"/>
@@ -89,16 +90,18 @@ const Portfolio = () => {
                         <p>A web application, which provides bus booking and hiring feature.</p>
                         
                         <div className = {Styles.preview_div}>
-                            <button className = {Styles.preview_button} onClick={handleOpen1}>Preview</button>
+                            <button className = {Styles.preview_button} onClick={handleOpen1}>Demo</button>
                             <a className = {Styles.link} href = "https://github.com/nitansh11/redbus" target = "blank"><button className = {Styles.preview_button}>Github Repo</button></a>
+                            <a className = {Styles.link} href = "https://archana.hashnode.dev/building-the-clone-of-redbusin-with-react-and-mongodb" target = "blank"><button className = {Styles.preview_button}>Blog</button></a>
                         </div>
                         <div className = {Styles.preview_div}>
-                            <AiFillHtml5 className = {Styles.tech_stacks_icons}/>
+                            <SiHtml5 className = {Styles.tech_stacks_icons}/>
                             <SiCss3 className = {Styles.tech_stacks_icons}/>
                             <FaReact className = {Styles.tech_stacks_icons}/>
                             <SiMaterialUi className = {Styles.tech_stacks_icons}/>
                             <SiMongodb className = {Styles.tech_stacks_icons}/>
                         </div>
+                        
                     </div>
                     <Modal
                         aria-labelledby="transition-modal-title"
@@ -132,11 +135,12 @@ const Portfolio = () => {
                         <p>A web application, where users can organize their own events and join an event on the basis of their interests.</p>
                        
                         <div className = {Styles.preview_div}>
-                            <button className = {Styles.preview_button} onClick={handleOpen2}>Preview</button>
+                            <button className = {Styles.preview_button} onClick={handleOpen2}>Demo</button>
                             <a className = {Styles.link} href = "https://github.com/ranjithkumark8/echo_meetup" target = "blank"><button className = {Styles.preview_button}>Github Repo</button></a>
+                            <a className = {Styles.link} href = "https://abhiarchana14.medium.com/how-we-clone-a-website-in-just-4-days-d6fa6620e559" target = "blank"><button className = {Styles.preview_button}>Blog</button></a>
                         </div>
                         <div className = {Styles.preview_div}>
-                            <AiFillHtml5 className = {Styles.tech_stacks_icons}/>
+                            <SiHtml5 className = {Styles.tech_stacks_icons}/>
                             <SiCss3 className = {Styles.tech_stacks_icons}/>
                             <FaReact className = {Styles.tech_stacks_icons}/>
                             <SiMaterialUi className = {Styles.tech_stacks_icons}/>
@@ -170,16 +174,16 @@ const Portfolio = () => {
                     <img className = {Styles.project_images} src = {chatApp} alt = "chatapp" height = "300px" width = "580px"/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Chat Application</h3>
-                        <p>This is a chat application , which let a user to join a group were user can chat with other members of the group.</p>
+                        <p>This is a chat application , which let a user to join a group, where user can chat with other members of the group.</p>
                       
                         <div className = {Styles.preview_div}>
-                            <button className = {Styles.preview_button} onClick={handleOpen5}>Preview</button>
-                            <a className = {Styles.link} href = "https://github.com/archana-sing/project_chat_application" target = "blank"> <button className = {Styles.preview_button} onClick={handleOpen5}>Github Repo</button></a>
+                            <button className = {Styles.preview_button} onClick={handleOpen5}>Demo</button>
+                            <a className = {Styles.link} href = "https://github.com/archana-sing/project_chat_application" target = "blank"> <button className = {Styles.preview_button}>Github Repo</button></a>
                         </div>
                         <div className = {Styles.preview_div}>
-                            <AiFillHtml5 className = {Styles.tech_stacks_icons}/>
+                            <SiHtml5 className = {Styles.tech_stacks_icons}/>
                             <SiCss3 className = {Styles.tech_stacks_icons}/>
-                            <DiJavascript1 className = {Styles.tech_stacks_icons}/>
+                            <SiJavascript className = {Styles.tech_stacks_icons}/>
                         </div>
                     </div>
                     <Modal
@@ -210,16 +214,17 @@ const Portfolio = () => {
                     <img className = {Styles.project_images} src = {fitneespal} alt = "fitnesspal" height = "300px" width = "580px"/>
                     <div className = {Styles.proect_cards_text}>
                         <h3>Myfitnesspal Clone</h3>
-                        <p>A web application, where user can keep track of your food and exercises.</p>
+                        <p>A web application, where user can keep track of their food and exercises.</p>
                        
                         <div className = {Styles.preview_div}>
-                            <button className = {Styles.preview_button} onClick={handleOpen3}>Preview</button>
+                            <button className = {Styles.preview_button} onClick={handleOpen3}>Demo</button>
                             <a className = {Styles.link} href = "https://github.com/pranit95/Find-Your-Fit" target = "blank"> <button className = {Styles.preview_button}>Github Repo</button></a>
+                            <a className = {Styles.link} href = "https://abhiarchana14.medium.com/building-findyourfit-the-masai-way-464c50144c22" target = "blank"><button className = {Styles.preview_button}>Blog</button></a>
                         </div>
                         <div className = {Styles.preview_div}>
-                            <AiFillHtml5 className = {Styles.tech_stacks_icons}/>
+                            <SiHtml5 className = {Styles.tech_stacks_icons}/>
                             <SiCss3 className = {Styles.tech_stacks_icons}/>
-                            <DiJavascript1 className = {Styles.tech_stacks_icons}/>
+                            <SiJavascript className = {Styles.tech_stacks_icons}/>
                         </div>
                     </div>
                     <Modal
@@ -252,13 +257,13 @@ const Portfolio = () => {
                         <p>Some web pages, perfectly clone from Codecov.</p>
                       
                         <div className = {Styles.preview_div}>
-                            <button className = {Styles.preview_button} onClick={handleOpen4}>Preview</button>
-                            <a className = {Styles.link} href = "https://github.com/AnayBhoraskar/TEAM_IRON" target = "blank"> <button className = {Styles.preview_button} onClick={handleOpen4}>Github Repo</button></a>
+                            <button className = {Styles.preview_button} onClick={handleOpen4}>Demo</button>
+                            <a className = {Styles.link} href = "https://github.com/AnayBhoraskar/TEAM_IRON" target = "blank"> <button className = {Styles.preview_button}>Github Repo</button></a>
                         </div>
                         <div className = {Styles.preview_div}>
-                            <AiFillHtml5 className = {Styles.tech_stacks_icons}/>
+                            <SiHtml5 className = {Styles.tech_stacks_icons}/>
                             <SiCss3 className = {Styles.tech_stacks_icons}/>
-                            <DiJavascript1 className = {Styles.tech_stacks_icons}/>
+                            <SiJavascript className = {Styles.tech_stacks_icons}/>
                         </div>
                     </div>
                     <Modal

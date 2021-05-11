@@ -45,8 +45,8 @@ const About = () => {
                     <AiFillPhone className = {Styles.icons}/>
                     <h4>6374442683</h4>
                     </div>
-                    <h3>Hi , I'm Archana</h3>
-                    <h3>A passionate coder ,who focuses on writing clean, elegant and efficient code.</h3>
+                    <h3>Hi, I'm Archana Singh</h3>
+                    <h3>A passionate coder, who focuses on writing clean, elegant and efficient code.</h3>
                     <h3>Looking for a challenging role in software industry.</h3>
                     <div style = {{display : "flex" , justifyContent : "space-around", width : "100px" , margin : "10px auto"}}>
                         <a className = {Styles.contact_icons} href = "https://www.linkedin.com/in/singh-archana" target = "blank"><AiFillLinkedin/></a>
